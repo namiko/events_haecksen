@@ -959,8 +959,17 @@
          "tilewidth":32
         }, 
         {
+         "columns":16,
          "firstgid":321,
-         "source":"Rocks.tsx"
+         "image":"mountain_landscape.png",
+         "imageheight":512,
+         "imagewidth":512,
+         "margin":0,
+         "name":"Rocks",
+         "spacing":0,
+         "tilecount":256,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
