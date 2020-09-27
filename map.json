@@ -972,8 +972,17 @@
          "tilewidth":32
         }, 
         {
+         "columns":2,
          "firstgid":6913,
-         "source":"fairydust.tsx"
+         "image":"fairydust.png",
+         "imageheight":128,
+         "imagewidth":64,
+         "margin":0,
+         "name":"fairydust",
+         "spacing":0,
+         "tilecount":8,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
