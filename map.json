@@ -126,20 +126,22 @@
                  "y":672.5
                 }, 
                 {
-                 "height":19,
+                 "height":211,
                  "id":10,
                  "name":"",
                  "rotation":0,
                  "text":
                     {
+                     "fontfamily":"Arial",
+                     "pixelsize":24,
                      "text":"Anger Exchange Point",
                      "wrap":true
                     },
                  "type":"",
                  "visible":true,
-                 "width":183,
-                 "x":636,
-                 "y":114.5
+                 "width":228,
+                 "x":608,
+                 "y":104.5
                 }, 
                 {
                  "height":19,
@@ -178,8 +180,9 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"www.google.com\/"
+                 "value":"https:\/\/www.haecksen.org"
                 }],
+         "tintcolor":"#00ff00",
          "type":"objectgroup",
          "visible":true,
          "x":0,
