@@ -967,8 +967,17 @@
          "tilewidth":32
         }, 
         {
+         "columns":3,
          "firstgid":6921,
-         "source":"auditorium.tsx"
+         "image":"auditorium.png",
+         "imageheight":32,
+         "imagewidth":96,
+         "margin":0,
+         "name":"auditorium",
+         "spacing":0,
+         "tilecount":3,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
