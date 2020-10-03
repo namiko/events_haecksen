@@ -36,7 +36,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.haecksen.org"
+                 "value":"https:\/\/www.youtube.com\/watch?v=OOIO3oiC3lM"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -50,45 +50,6 @@
          "name":"floorLayer",
          "objects":[],
          "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "id":6,
-         "name":"Objektebene 2",
-         "objects":[
-                {
-                 "height":73,
-                 "id":1,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":112,
-                 "x":8198,
-                 "y":7292
-                }, 
-                {
-                 "height":0,
-                 "id":3,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":0,
-                 "x":8214,
-                 "y":7475
-                }],
-         "opacity":1,
-         "properties":[
-                {
-                 "name":"openWebsite",
-                 "type":"string",
-                 "value":"https:\/\/www.haecksen.org"
-                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
