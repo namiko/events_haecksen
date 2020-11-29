@@ -1,7 +1,7 @@
 Enter map:
 
 
-https://play.workadventu.re/_/global/namiko.github.io/assembly/haecksen_entry.json
+https://play.workadventu.re/_/global/namiko.github.io/assembly/main.json
 
 
 # WorkAdventure Map Starter Kit
