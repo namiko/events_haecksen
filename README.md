@@ -1,6 +1,7 @@
 Enter map:
 
-https://play.workadventu.re/_/global/ghostrich.github.io/assembly/map.json
+
+https://play.workadventu.re/_/global/namiko.github.io/assembly/haecksen_entry.json
 
 
 # WorkAdventure Map Starter Kit
