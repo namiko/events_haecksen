@@ -1,6 +1,6 @@
 Enter map:
 
-https://play.workadventu.re/_/global/namiko.github.io/assembly/main.json
+https://play.wa-test.rc3.cccv.de/_/global/namiko.github.io/assembly/main.json
 
 
 # WorkAdventure Map Starter Kit
