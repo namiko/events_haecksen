@@ -1,4 +1,11 @@
 { "compressionlevel":-1,
+ "editorsettings":
+    {
+     "export":
+        {
+         "target":"."
+        }
+    },
  "height":30,
  "infinite":false,
  "layers":[
@@ -20,7 +27,20 @@
  "renderorder":"right-down",
  "tiledversion":"1.4.2",
  "tileheight":32,
- "tilesets":[],
+ "tilesets":[
+        {
+         "columns":16,
+         "firstgid":1,
+         "image":"..\/tiles\/colors-128.png",
+         "imageheight":256,
+         "imagewidth":512,
+         "margin":0,
+         "name":"colors-128",
+         "spacing":0,
+         "tilecount":128,
+         "tileheight":32,
+         "tilewidth":32
+        }],
  "tilewidth":32,
  "type":"map",
  "version":1.4,
