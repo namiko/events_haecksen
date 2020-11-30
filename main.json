@@ -19,7 +19,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/github.com\/namiko\/assembly\/blob\/gh-pages\/test.html"
+                 "value":"https:\/\/namiko.github.io\/assembly\/test.html"
                 }],
          "type":"tilelayer",
          "visible":true,
