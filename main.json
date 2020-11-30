@@ -19,7 +19,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/events.haecksen.org"
+                 "value":"https:\/\/github.com\/namiko\/assembly\/blob\/gh-pages\/test.html"
                 }],
          "type":"tilelayer",
          "visible":true,
