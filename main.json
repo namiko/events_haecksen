@@ -385,15 +385,15 @@
          "tilewidth":32
         }, 
         {
-         "columns":4,
+         "columns":6,
          "firstgid":2246,
          "image":"tiles\/additional_tiles.png",
-         "imageheight":128,
-         "imagewidth":128,
+         "imageheight":192,
+         "imagewidth":192,
          "margin":0,
          "name":"additional_tiles",
          "spacing":0,
-         "tilecount":16,
+         "tilecount":36,
          "tileheight":32,
          "tilewidth":32
         }],
