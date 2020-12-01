@@ -27,6 +27,12 @@
          "id":23,
          "name":"exitToFirstFloor",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":".\/maps\/firstfloor.json#enterFromMain"
+                }],
          "type":"tilelayer",
          "visible":false,
          "width":53,
@@ -39,6 +45,12 @@
          "id":24,
          "name":"entryFromFirstFloor",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":false,
          "width":53,
