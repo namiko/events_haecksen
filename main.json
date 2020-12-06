@@ -64,7 +64,7 @@
          "name":"space",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":53,
          "x":0,
          "y":0
@@ -76,7 +76,7 @@
          "name":"windowglas_2",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":53,
          "x":0,
          "y":0
