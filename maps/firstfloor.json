@@ -109,7 +109,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"playAudio",
+                 "name":"playAudioLoop",
                  "type":"string",
                  "value":"..\/sounds\/teehouse_ambient.mp3"
                 }],
