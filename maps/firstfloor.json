@@ -37,7 +37,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/haecksen.pads.ccc.de\/906?&cookieShouldBeSet=0"
+                 "value":"https:\/\/pads.ccc.de\/?setCookie=0&contUrl=https:\/\/haecksen.pads.ccc.de\/906"
                 }],
          "type":"tilelayer",
          "visible":true,
