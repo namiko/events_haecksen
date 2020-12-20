@@ -91,7 +91,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/lichess.org\/"
+                 "value":"https:\/\/www.schach-spielen.eu\/schach-online-spielen"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -109,7 +109,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/drewosaurus.itch.io\/ball-pit-"
+                 "value":"https:\/\/www.newgrounds.com\/portal\/view\/700239"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1692,6 +1692,42 @@
          "tilecount":1064,
          "tileheight":32,
          "tiles":[
+                {
+                 "id":717,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":719,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":733,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
+                 "id":735,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
                 {
                  "animation":[
                         {
