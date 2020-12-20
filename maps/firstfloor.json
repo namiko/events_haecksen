@@ -91,7 +91,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.schach-spielen.eu\/schach-online-spielen"
+                 "value":"https:\/\/schach.de"
                 }],
          "type":"tilelayer",
          "visible":true,
