@@ -110,6 +110,10 @@
     color: #25c7ff ;
 }
 
+.event-image img {
+    max-width: 162px;
+}
+
 .single-features::before {
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
