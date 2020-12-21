@@ -127,6 +127,10 @@
     color: #0d9449;
 }
 
+.single-gallery .gallery-image::before {
+    background-color: #08a774d6;
+}
+
 .footer-widget .widget {
     border: none;
 }
