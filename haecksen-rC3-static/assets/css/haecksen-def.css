@@ -106,6 +106,10 @@
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
 
+.event-tab .nav .nav-item a {
+    width: 185px;
+}
+
 .event-tab .tab-content .event-content .single-event::before {
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
