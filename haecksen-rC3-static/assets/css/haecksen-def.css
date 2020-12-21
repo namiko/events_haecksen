@@ -75,6 +75,10 @@
     border-color: #fff;
 }
 
+.event-tab .tab-content .event-content .single-event {
+    background-color: #ffe5f8;
+}
+
 .single-team .team-content .sub-title {
     color: #0d9449;
 }
