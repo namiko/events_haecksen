@@ -79,6 +79,10 @@
     background-color: #ffe5f8;
 }
 
+.event-image img {
+    max-width: 162px;
+}
+
 .single-team .team-content .sub-title {
     color: #0d9449;
 }
