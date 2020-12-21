@@ -87,6 +87,10 @@
     color: #0d9449;
 }
 
+.event-tab .nav .nav-item a {
+    width: 185px;
+}
+
 .event-tab {
     border: 3px solid rgba(24, 255, 125, 0.18);
 }
