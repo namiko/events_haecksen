@@ -49,7 +49,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/namiko.github.io\/assembly\/pages\/telescope.html"
+                 "value":"https:\/\/namiko.github.io\/assembly\/pages\/test.html"
                 }],
          "type":"tilelayer",
          "visible":true,
