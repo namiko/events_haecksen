@@ -118,6 +118,10 @@
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
 
+.single-gallery .gallery-image::before {
+    background-color: #08a774d6;
+}
+
 .footer-contact .social li a {
     color: #1664ff;
     background-color: #fff;
