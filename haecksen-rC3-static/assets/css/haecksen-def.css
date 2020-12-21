@@ -122,6 +122,10 @@
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
 
+.back-to-top {
+    background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
+}
+
 .footer-contact .social li a {
     color: #1664ff;
     background-color: #fff;
