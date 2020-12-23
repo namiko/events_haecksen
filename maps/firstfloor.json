@@ -289,7 +289,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/namiko.github.io\/assembly\/pages\/assets\/karte.png"
+                 "value":"https:\/\/namiko.github.io\/assembly\/pages\/map.html"
                 }],
          "type":"tilelayer",
          "visible":true,
