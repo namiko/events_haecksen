@@ -451,7 +451,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.kochwiki.org\/wiki\/Tschunk"
+                 "value":"https:\/\/namiko.github.io\/assembly\/pages\/tschunk_rezepte.html"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1084,7 +1084,7 @@
  "nextobjectid":3,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.4.2",
  "tileheight":32,
  "tilesets":[
         {
