@@ -379,7 +379,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/codenames.game\/room\/china-cook-fan"
+                 "value":"https:\/\/codenames.game"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -415,7 +415,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/schach.de"
+                 "value":"https:\/\/schach.de\/de\/Fritz"
                 }],
          "type":"tilelayer",
          "visible":true,
