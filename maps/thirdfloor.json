@@ -159,7 +159,7 @@
                 {
                  "name":"ExitSceneUrl",
                  "type":"string",
-                 "value":""
+                 "value":"{<lebkuch-is>\/main.json}"
                 }],
          "type":"tilelayer",
          "visible":true,
