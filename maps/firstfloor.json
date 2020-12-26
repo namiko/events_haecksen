@@ -1223,7 +1223,7 @@
          "name":"interior_over_character",
          "opacity":1,
          "type":"tilelayer",
-         "visible":false,
+         "visible":true,
          "width":52,
          "x":0,
          "y":0
