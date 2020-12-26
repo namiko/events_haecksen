@@ -135,6 +135,12 @@
          "id":28,
          "name":"exitToLobby",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"exitSceneUrl",
+                 "type":"string",
+                 "value":"{<lobby>\/erfas-spaces-north.json#start_haecksen}"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":53,
