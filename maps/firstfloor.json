@@ -721,7 +721,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{<digitalcourage>\/main.json}"
+                 "value":"{<digitalcourage>\/main.json#enterFromHaecksen}"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1342,7 +1342,7 @@
  "nextobjectid":3,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.4.2",
  "tileheight":32,
  "tilesets":[
         {
