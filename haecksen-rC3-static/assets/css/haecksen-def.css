@@ -118,10 +118,6 @@
     width: 185px;
 }
 
-.event-tab .tab-content .event-content .single-event::before {
-    background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
-}
-
 @media (max-width: 767px) {
     .event-tab .nav .nav-item a {
         width: 168px;
@@ -131,6 +127,9 @@
     }
 }
 
+.event-tab .tab-content .event-content .single-event::before {
+    background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
+}
 
 .back-to-top {
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
