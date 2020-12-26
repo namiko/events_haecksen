@@ -122,6 +122,16 @@
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
 
+@media (max-width: 767px) {
+    .event-tab .nav .nav-item a {
+        width: 168px;
+    }
+    .event-tab .nav .nav-item a.active {
+        border-color: 3px solid rgba(0, 198, 244, 0.18);
+    }
+}
+
+
 .back-to-top {
     background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
 }
