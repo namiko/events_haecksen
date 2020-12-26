@@ -1,324 +1,1460 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:x="urn:schemas-microsoft-com:office:excel"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<html>
 <head>
-<meta name="Excel Workbook Frameset">
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Excel.Sheet>
-<meta name=Generator content="Microsoft Excel 15">
-<link rel=File-List href="haecksenbib-Dateien/filelist.xml">
-<![if !supportTabStrip]>
-<link id="shLink" href="haecksenbib-Dateien/sheet001.html">
 
-<link id="shLink">
-
-<script language="JavaScript">
-<!--
- var c_lTabs=1;
-
- var c_rgszSh=new Array(c_lTabs);
- c_rgszSh[0] = "Tabelle1";
-
-
-
- var c_rgszClr=new Array(8);
- c_rgszClr[0]="window";
- c_rgszClr[1]="buttonface";
- c_rgszClr[2]="windowframe";
- c_rgszClr[3]="windowtext";
- c_rgszClr[4]="threedlightshadow";
- c_rgszClr[5]="threedhighlight";
- c_rgszClr[6]="threeddarkshadow";
- c_rgszClr[7]="threedshadow";
-
- var g_iShCur;
- var g_rglTabX=new Array(c_lTabs);
-
-function fnGetIEVer()
-{
- var ua=window.navigator.userAgent
- var msie=ua.indexOf("MSIE")
- if (msie>0 && window.navigator.platform=="Win32")
-  return parseInt(ua.substring(msie+5,ua.indexOf(".", msie)));
- else
-  return 0;
-}
-
-function fnBuildFrameset()
-{
- var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[0].href+"\" name=\"frSheet\" noresize>"+
-  "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
-  "</frameset></frameset><plaintext>";
-
- with (document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- fnBuildTabStrip();
-}
-
-function fnBuildTabStrip()
-{
- var szHTML=
-  "<html><head><style>.clScroll {font:8pt Courier New;color:"+c_rgszClr[6]+";cursor:default;line-height:10pt;}"+
-  ".clScroll2 {font:10pt Arial;color:"+c_rgszClr[6]+";cursor:default;line-height:11pt;}</style></head>"+
-  "<body onclick=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" onselectstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+" topmargin=0 leftmargin=0><table cellpadding=0 cellspacing=0 width=100%>"+
-  "<tr><td colspan=6 height=1 bgcolor="+c_rgszClr[2]+"></td></tr>"+
-  "<tr><td style=\"font:1pt\">&nbsp;<td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(0);\" onmouseout=\"parent.fnMouseOutScroll(0);\"><a>&#171;</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(0);\" ondblclick=\"parent.fnScrollTabs(0);\" onmouseover=\"parent.fnMouseOverScroll(1);\" onmouseout=\"parent.fnMouseOutScroll(1);\"><a>&lt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll2\" onclick=\"parent.fnScrollTabs(1);\" ondblclick=\"parent.fnScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(2);\" onmouseout=\"parent.fnMouseOutScroll(2);\"><a>&gt</a></td>"+
-  "<td valign=top id=tdScroll class=\"clScroll\" onclick=\"parent.fnFastScrollTabs(1);\" onmouseover=\"parent.fnMouseOverScroll(3);\" onmouseout=\"parent.fnMouseOutScroll(3);\"><a>&#187;</a></td>"+
-  "<td style=\"font:1pt\">&nbsp;<td></tr></table></body></html>";
-
- with (frames['frScroll'].document) {
-  open("text/html","replace");
-  write(szHTML);
-  close();
- }
-
- szHTML =
-  "<html><head>"+
-  "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:9pt Arial;padding-left:3px;padding-right:3px;text-align:center;}"+
-  ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
-  "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
-  " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
-
- var iCellCount=(c_lTabs+1)*2;
-
- var i;
- for (i=0;i<iCellCount;i+=2)
-  szHTML+="<col width=1><col>";
-
- var iRow;
- for (iRow=0;iRow<6;iRow++) {
-
-  szHTML+="<tr>";
-
-  if (iRow==5)
-   szHTML+="<td colspan="+iCellCount+"></td>";
-  else {
-   if (iRow==0) {
-    for(i=0;i<iCellCount;i++)
-     szHTML+="<td height=1 class=\"clBorder\"></td>";
-   } else if (iRow==1) {
-    for(i=0;i<c_lTabs;i++) {
-     szHTML+="<td height=1 nowrap class=\"clBorder\">&nbsp;</td>";
-     szHTML+=
-      "<td id=tdTab height=1 nowrap class=\"clTab\" onmouseover=\"parent.fnMouseOverTab("+i+");\" onmouseout=\"parent.fnMouseOutTab("+i+");\">"+
-      "<a href=\""+document.all.item("shLink")[i].href+"\" target=\"frSheet\" id=aTab>&nbsp;"+c_rgszSh[i]+"&nbsp;</a></td>";
-    }
-    szHTML+="<td id=tdTab height=1 nowrap class=\"clBorder\"><a id=aTab>&nbsp;</a></td><td width=100%></td>";
-   } else if (iRow==2) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1></td><td height=1 class=\"clBorder\"></td>";
-    szHTML+="<td height=1></td><td height=1></td>";
-   } else if (iRow==3) {
-    for (i=0;i<iCellCount;i++)
-     szHTML+="<td height=1></td>";
-   } else if (iRow==4) {
-    for (i=0;i<c_lTabs;i++)
-     szHTML+="<td height=1 width=1></td><td height=1></td>";
-    szHTML+="<td height=1 width=1></td><td></td>";
-   }
-  }
-  szHTML+="</tr>";
- }
-
- szHTML+="</table></body></html>";
- with (frames['frTabs'].document) {
-  open("text/html","replace");
-  charset=document.charset;
-  write(szHTML);
-  close();
- }
-}
-
-function fnInit()
-{
- g_rglTabX[0]=0;
- var i;
- for (i=1;i<=c_lTabs;i++)
-  with (frames['frTabs'].document.all.tbTabs.rows[1].cells[fnTabToCol(i-1)])
-   g_rglTabX[i]=offsetLeft+offsetWidth-6;
-}
-
-function fnTabToCol(iTab)
-{
- return 2*iTab+1;
-}
-
-function fnNextTab(fDir)
-{
- var iNextTab=-1;
- var i;
-
- with (frames['frTabs'].document.body) {
-  if (fDir==0) {
-   if (scrollLeft>0) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i-1;
-   }
-  } else {
-   if (g_rglTabX[c_lTabs]+6>offsetWidth+scrollLeft) {
-    for (i=0;i<c_lTabs&&g_rglTabX[i]<=scrollLeft;i++);
-    if (i<c_lTabs)
-     iNextTab=i;
-   }
-  }
- }
- return iNextTab;
-}
-
-function fnScrollTabs(fDir)
-{
- var iNextTab=fnNextTab(fDir);
-
- if (iNextTab>=0) {
-  frames['frTabs'].scroll(g_rglTabX[iNextTab],0);
-  return true;
- } else
-  return false;
-}
-
-function fnFastScrollTabs(fDir)
-{
- if (c_lTabs>16)
-  frames['frTabs'].scroll(g_rglTabX[fDir?c_lTabs-1:0],0);
- else
-  if (fnScrollTabs(fDir)>0) window.setTimeout("fnFastScrollTabs("+fDir+");",5);
-}
-
-function fnSetTabProps(iTab,fActive)
-{
- var iCol=fnTabToCol(iTab);
- var i;
-
- if (iTab>=0) {
-  with (frames['frTabs'].document.all) {
-   with (tbTabs) {
-    for (i=0;i<=4;i++) {
-     with (rows[i]) {
-      if (i==0)
-       cells[iCol].style.background=c_rgszClr[fActive?0:2];
-      else if (i>0 && i<4) {
-       if (fActive) {
-        cells[iCol-1].style.background=c_rgszClr[2];
-        cells[iCol].style.background=c_rgszClr[0];
-        cells[iCol+1].style.background=c_rgszClr[2];
-       } else {
-        if (i==1) {
-         cells[iCol-1].style.background=c_rgszClr[2];
-         cells[iCol].style.background=c_rgszClr[1];
-         cells[iCol+1].style.background=c_rgszClr[2];
-        } else {
-         cells[iCol-1].style.background=c_rgszClr[4];
-         cells[iCol].style.background=c_rgszClr[(i==2)?2:4];
-         cells[iCol+1].style.background=c_rgszClr[4];
-        }
-       }
-      } else
-       cells[iCol].style.background=c_rgszClr[fActive?2:4];
-     }
-    }
-   }
-   with (aTab[iTab].style) {
-    cursor=(fActive?"default":"hand");
-    color=c_rgszClr[3];
-   }
-  }
- }
-}
-
-function fnMouseOverScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[7];
-}
-
-function fnMouseOutScroll(iCtl)
-{
- frames['frScroll'].document.all.tdScroll[iCtl].style.color=c_rgszClr[6];
-}
-
-function fnMouseOverTab(iTab)
-{
- if (iTab!=g_iShCur) {
-  var iCol=fnTabToCol(iTab);
-  with (frames['frTabs'].document.all) {
-   tdTab[iTab].style.background=c_rgszClr[5];
-  }
- }
-}
-
-function fnMouseOutTab(iTab)
-{
- if (iTab>=0) {
-  var elFrom=frames['frTabs'].event.srcElement;
-  var elTo=frames['frTabs'].event.toElement;
-
-  if ((!elTo) ||
-   (elFrom.tagName==elTo.tagName) ||
-   (elTo.tagName=="A" && elTo.parentElement!=elFrom) ||
-   (elFrom.tagName=="A" && elFrom.parentElement!=elTo)) {
-
-   if (iTab!=g_iShCur) {
-    with (frames['frTabs'].document.all) {
-     tdTab[iTab].style.background=c_rgszClr[1];
-    }
-   }
-  }
- }
-}
-
-function fnSetActiveSheet(iSh)
-{
- if (iSh!=g_iShCur) {
-  fnSetTabProps(g_iShCur,false);
-  fnSetTabProps(iSh,true);
-  g_iShCur=iSh;
- }
-}
-
- window.g_iIEVer=fnGetIEVer();
- if (window.g_iIEVer>=4)
-  fnBuildFrameset();
-//-->
-</script>
-<![endif]><!--[if gte mso 9]><xml>
- <x:ExcelWorkbook>
-  <x:ExcelWorksheets>
-   <x:ExcelWorksheet>
-    <x:Name>Tabelle1</x:Name>
-    <x:WorksheetSource HRef="haecksenbib-Dateien/sheet001.html"/>
-   </x:ExcelWorksheet>
-  </x:ExcelWorksheets>
-  <x:Stylesheet HRef="haecksenbib-Dateien/stylesheet.css"/>
-  <x:WindowHeight>7640</x:WindowHeight>
-  <x:WindowWidth>19200</x:WindowWidth>
-  <x:WindowTopX>0</x:WindowTopX>
-  <x:WindowTopY>0</x:WindowTopY>
-  <x:ProtectStructure>False</x:ProtectStructure>
-  <x:ProtectWindows>False</x:ProtectWindows>
- </x:ExcelWorkbook>
-</xml><![endif]-->
 </head>
+<body style='font-family:"Courier New",Courier;color:white' bgcolor=”#000000" LINK="#FFFFFF" VLINK= "#FFFFFF" ALINK="#FFFFFF">
 
-<frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="haecksenbib-Dateien/sheet001.html" name="frSheet">
- <frame src="haecksenbib-Dateien/tabstrip.html" name="frTabs" marginwidth=0 marginheight=0>
- <noframes>
-  <body>
-   <p>Diese Seite verwendet Frames. Frames werden von Ihrem Browser aber nicht unterstützt.</p>
-  </body>
- </noframes>
-</frameset>
+<table border=1 cellpadding=0 cellspacing=0 width=2328>
+
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;width:240pt'><b>Titel</td>
+  <td width=451 style='border-left:none;width:339pt'><b>Kurzbeschreibung</td>
+  <td width=340 style='border-left:none;width:255pt'><b>Link</td>
+  <td width=85 style='border-left:none;width:64pt'><b>Sprache</td>
+  <td width=234 style='border-left:none;width:176pt'><b>Genre</td>
+  <td width=255 style='border-left:none;width:191pt'><b>Vorname
+  Autor:in/ Herausgeber:in</td>
+  <td width=251 style='border-left:none;width:188pt'><b>Nachname
+  Autor:in/ Herausgeber:in</td>
+  <td width=222 style='border-left:none;width:167pt'><b>Event</td>
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>We are feminists: Eine kurze Geschichte der Frauenrechte</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.randomhouse.de/Buch/We-are-Feminists/Margarete-Stokowski/Prestel/e559153.rhd">https://www.randomhouse.de/Buch/We-are-Feminists/Margarete-Stokowski/Prestel/e559153.rhd</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td width=255 style='border-top:none;border-left:none;width:191pt'>Rebecca</td>
+  <td style='border-top:none;border-left:none'>Strickson</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Unsichtbare Frauen</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.randomhouse.de/Paperback/Unsichtbare-Frauen/Caroline-Criado-Perez/btb/e561586.rhd"
+  target="_parent">https://www.randomhouse.de/Paperback/Unsichtbare-Frauen/Caroline-Criado-Perez/btb/e561586.rhd</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Caroline</td>
+  <td style='border-top:none;border-left:none'>Criado-Perez</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Weapons of Math Destruction: Einführung in Konsequenzen zur
+  Arbeit mit Algorithmen</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://weaponsofmathdestructionbook.com/" target="_parent">https://weaponsofmathdestructionbook.com/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Cathy</td>
+  <td style='border-top:none;border-left:none'>O'Neil</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Miroloi</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„So
+  eine wie ich ist hier eigentlich nicht vorgesehen.&quot; - Karen Köhlers
+  erster Roman über eine junge Frau, die sich auflehnt. Gegen die Strukturen
+  ihrer Gesellschaft und für die Freiheit“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.hanser-literaturverlage.de/buch/miroloi/978-3-446-26171-6/"
+  target="_parent">https://www.hanser-literaturverlage.de/buch/miroloi/978-3-446-26171-6/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Karen</td>
+  <td style='border-top:none;border-left:none'>Köhler</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Bi Notes for a Bisexual Revolution: Sexulisierung von Frauen
+  aufgrund ihrer Bisexualität</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Informed
+  by feminist, transgender, and queer theory, as well as politics and activism,
+  Bi is a radical manifesto for a group that has been too frequently silenced,
+  erased, and denied — and a starting point from which to launch a bisexual
+  revolution.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.sealpress.com/titles/shiri-eisner/bi/9781580054744/"
+  target="_parent">https://www.sealpress.com/titles/shiri-eisner/bi/9781580054744/</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Shiri</td>
+  <td style='border-top:none;border-left:none'>Eisner</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Geek Girl Rising: Inside the Sisterhood Shaking Up Tech</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Meet
+  the women who haven’t asked for permission from Silicon Valley to chase their
+  dreams.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://geekgirlrising.com/" target="_parent">
+  https://geekgirlrising.com/</a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Tech</td>
+  <td style='border-top:none;border-left:none'>Heather</td>
+  <td style='border-top:none;border-left:none'>Cabot</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Geek Girl Rising: Inside the Sisterhood Shaking Up Tech</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Meet
+  the women who haven’t asked for permission from Silicon Valley to chase their
+  dreams.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://geekgirlrising.com/" target="_parent">
+  https://geekgirlrising.com/</a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Tech</td>
+  <td style='border-top:none;border-left:none'>Samantha</td>
+  <td style='border-top:none;border-left:none'>Walravens</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>SUPPORT YOUR SISTERS NOT YOUR CISTERS. Über Diskriminierung von
+  trans*Weiblichkeiten</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Die
+  Musikerin „FaulenzA“ beschreibt aus ihren persönlichen Erfahrungen die
+  Diskriminierung gegen trans*Frauen und gibt Anregungen für mehr Sensibilität
+  und Support</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.edition-assemblage.de/buecher/support-your-sisters-not-your-cisters/"
+  target="_parent">https://www.edition-assemblage.de/buecher/support-your-sisters-not-your-cisters/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>FaulenzA</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>TRANS. FRAU. SEIN.Aspekte geschlechtlicher Marginalisierung</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Das
+  Buch beschreibt bestehende Diskriminierungsmechanismen, die sich gegen
+  transgeschlechtliche Menschen richten.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.edition-assemblage.de/buecher/trans-frau-sein/"
+  target="_parent">https://www.edition-assemblage.de/buecher/trans-frau-sein/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Felicia</td>
+  <td style='border-top:none;border-left:none'>Ewert</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Yalla, Feminismus!</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.klett-cotta.de/buch/Tropen-Sachbuch/Yalla_Feminismus!/106754"
+  target="_parent">https://www.klett-cotta.de/buch/Tropen-Sachbuch/Yalla_Feminismus!/106754</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Reyhan</td>
+  <td style='border-top:none;border-left:none'>&#350;ahin</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Whipping Girl</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Informed
+  by feminist, transgender, and queer theory, as well as politics and activism,
+  Bi is a radical manifesto for a group that has been too frequently silenced,
+  erased, and denied — and a starting point from which to launch a bisexual
+  revolution.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="http://www.juliaserano.com/whippinggirl.html" target="_parent">http://www.juliaserano.com/whippinggirl.html</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Julia</td>
+  <td style='border-top:none;border-left:none'>Serano</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Deutschland Schwarz Weiss</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>–
+  Gegenüber bisheriger Printfassungen gibt es sehr viele Änderungen und
+  Ergänzungen.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.noahsow.de/blog/deutschland-schwarz-weiss-2018/"
+  target="_parent">https://www.noahsow.de/blog/deutschland-schwarz-weiss-2018/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Rassismus</td>
+  <td style='border-top:none;border-left:none'>Noah</td>
+  <td style='border-top:none;border-left:none'>Sow</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Was weiße Menschen nicht über Rassismus hören wollen aber wissen
+  sollten</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„
+  Wer Rassismus bekämpfen will, muss Veränderung befürworten – und die fängt
+  bei einem selbst an.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.hanser-literaturverlage.de/buch/was-weisse-menschen-nicht-ueber-rassismus-hoeren-wollen-aber-wissen-sollten/978-3-446-26425-0/">https://www.hanser-literaturverlage.de/buch/was-weisse-menschen-nicht-ueber-rassismus-hoeren-wollen-aber-wissen-sollten/978-3-446-26425-0/</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Rassismus</td>
+  <td style='border-top:none;border-left:none'>Alice</td>
+  <td style='border-top:none;border-left:none'>Hasters</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Schmerzliche Heimat</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Die
+  Tochter des vom NSU ermordeten Enver Simsek berichtet von ihren Erinnerungen
+  an ihren Vater, wie sie seinen Tod, die polizeilichen Ermittlungen und die
+  Selbstenttarnung des NSU erlebt hat</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.rowohlt.de/buch/semiya-simsek-peter-schwarz-schmerzliche-heimat-9783644114319">https://www.rowohlt.de/buch/semiya-simsek-peter-schwarz-schmerzliche-heimat-9783644114319</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Rassismus</td>
+  <td style='border-top:none;border-left:none'>Semiya</td>
+  <td style='border-top:none;border-left:none'>Simsek</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+  
+ </tr>
+ <tr height=93 style='height:70.0pt'>
+  <td height=93 width=320 style='height:70.0pt;border-top:none;
+  width:240pt'>Schwarzer Feminismus</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Der
+  vorliegende Band dokumentiert die Kontinuität dieser feministischen
+  intellektuellen Tradition anhand ausgewählter Texte von Sojourner Truth,
+  Angela Davis, The Combahee River Collective, bell hooks, Audre Lorde, Barbara
+  Smith, Kimberlé Crenshaw und Patricia Hill Collins.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.unrast-verlag.de/neuerscheinungen/schwarzer-feminismus-detail"
+  target="_parent">https://www.unrast-verlag.de/neuerscheinungen/schwarzer-feminismus-detail</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Feminismus,
+  Rassismus</td>
+  <td style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'> </span>Natasha A.</td>
+  <td style='border-top:none;border-left:none'>Kelly</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Mein Dresden - Heimat tut weh</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.deutschlandfunk.de/mein-dresden-heimat-tut-weh.1775.de.html?dram:article_id=457508"
+  target="_parent">https://www.deutschlandfunk.de/mein-dresden-heimat-tut-weh.1775.de.html?dram:article_id=457508</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Artikel</td>
+  <td style='border-top:none;border-left:none'>Anh</td>
+  <td style='border-top:none;border-left:none'>Tran</td>
+  <td style='border-top:none;border-left:none'>divoc-ptt Sept. 2020</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>We are Feminists!</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Eine
+  kurze Geschichte der Frauenrechte</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.randomhouse.de/Buch/We-are-Feminists/Margarete-Stokowski/Prestel/e559153.rhd">https://www.randomhouse.de/Buch/We-are-Feminists/Margarete-Stokowski/Prestel/e559153.rhd</a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Margarete</td>
+  <td style='border-top:none;border-left:none'>Stokowski</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Kleine Geschichte des Feminismus</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Philosophinnen,
+  Rebellinnen, Aktivistinnen: Dieser Comic erzählt die Geschichte des
+  Feminismus im euro-amerikanischen Kontext von der Antike bis heute.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.unrast-verlag.de/kleine-geschichte-des-feminismus-498-538-detail">https://www.unrast-verlag.de/kleine-geschichte-des-feminismus-498-538-detail</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Antje</td>
+  <td style='border-top:none;border-left:none'>Schrupp</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Unerschrocken</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Fünfzehn
+  Porträts außergewöhnlicher Frauen</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.reprodukt.com/Produkt/comics/unerschrocken-funfzehn-portrats-ausergewohnlicher-frauen/"
+  target="_parent">https://www.reprodukt.com/Produkt/comics/unerschrocken-funfzehn-portrats-ausergewohnlicher-frauen/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Comic</td>
+  <td style='border-top:none;border-left:none'>Pénélope</td>
+  <td style='border-top:none;border-left:none'>Bagieu</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=131 style='height:98.0pt'>
+  <td height=131 width=320 style='height:98.0pt;border-top:none;
+  width:240pt'>The Periodic Table of Feminism</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„The
+  Periodic Table of Feminism is an empowering, engaging and informed look at
+  the feminist movement through the international figures who have shaped it,
+  from Mary Wollstonecraft to Caitlin Moran by way of Simone de Beauvoir and
+  Oprah. Featuring 130 figures as well as 10 additional ‘top ten’ lists, the
+  book will offer new angles on famous faces as well as introduce you to some
+  unsung heroes.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.penguin.co.uk/books/111/1114581/the-periodic-table-of-feminism/9781785037788.html">https://www.penguin.co.uk/books/111/1114581/the-periodic-table-of-feminism/9781785037788.html</a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Marisa</td>
+  <td style='border-top:none;border-left:none'>Bate</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Die gleißende Welt</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Originaltitel:
+  The Blazing World</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>https://www.rowohlt.de/buch/siri-hustvedt-die-gleissende-welt-9783499268373</td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Siri</td>
+  <td style='border-top:none;border-left:none'>Hustvedt</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Wild Embers<br>
+    Poems of Rebellion, Fire and Beauty</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.goodreads.com/book/show/34253376-wild-embers"
+  target="_parent">https://www.goodreads.com/book/show/34253376-wild-embers</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Poetry</td>
+  <td style='border-top:none;border-left:none'>Nikita</td>
+  <td style='border-top:none;border-left:none'>Gill</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Das weibliche Prinzip</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Originaltitel:
+  ›The Female Persuasion‹</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>https://www.dumont-buchverlag.de/buch/wolitzer-das-weibliche-prinzip-9783832184247/</td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Meg</td>
+  <td style='border-top:none;border-left:none'>Wolitzer</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=93 style='height:70.0pt'>
+  <td height=93 width=320 style='height:70.0pt;border-top:none;
+  width:240pt'>Die Mutterliebe</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Die
+  Frauen sind genauso egoistisch auf sich konzentriert wie die Männer. Mit
+  dieser excellent recherchierten These deklariert Elisabeth Badinter die
+  Mutterliebe zum Männer(gemachten)-Mythos und erregte damit großes Aufsehen.
+  Das Buch ist ein heftig diskutierter Longseller.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.lovelybooks.de/autor/Elisabeth-Badinter/Die-Mutterliebe-144785840-w/">https://www.lovelybooks.de/autor/Elisabeth-Badinter/Die-Mutterliebe-144785840-w/</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Élisabeth</td>
+  <td style='border-top:none;border-left:none'>Badinter</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'><font class="font6">Die Frauen von Troja: </font><font
+  class="font0">Tochter des Sturms</font></td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Vor
+  dreitausend Jahren tobte ein Krieg, der die damalige Welt in ihren
+  Grundfesten erschütterte: Der Trojanische Krieg hat viele Helden
+  hervorgebracht. Hier erzählen die Frauen von Troja die Legende aus ihrer
+  Sicht.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e493872.rhd">https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e493872.rhd</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Historischer Roman</td>
+  <td style='border-top:none;border-left:none'>Emily</td>
+  <td style='border-top:none;border-left:none'>Hauser</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'><font class="font6">Die Frauen von Troja: </font><font
+  class="font0">Tochter des Meeres</font></td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Vor
+  dreitausend Jahren tobte ein Krieg, der die damalige Welt in ihren
+  Grundfesten erschütterte: Der Trojanische Krieg hat viele Helden
+  hervorgebracht. Hier erzählen die Frauen von Troja die Legende aus ihrer
+  Sicht.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e491155.rhd"
+  target="_parent">https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e491155.rhd</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Historischer Roman</td>
+  <td style='border-top:none;border-left:none'>Emily</td>
+  <td style='border-top:none;border-left:none'>Hauser</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'><font class="font6">Die Frauen von Troja: </font><font
+  class="font0">Tochter des Himmels</font></td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Vor
+  dreitausend Jahren tobte ein Krieg, der die damalige Welt in ihren
+  Grundfesten erschütterte: Der Trojanische Krieg hat viele Helden
+  hervorgebracht. Hier erzählen die Frauen von Troja die Legende aus ihrer
+  Sicht.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e491156.rhd"
+  target="_parent">https://www.randomhouse.de/Paperback/Die-Frauen-von-Troja/Emily-Hauser/Goldmann/e491156.rhd</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Historischer Roman</td>
+  <td style='border-top:none;border-left:none'>Emily</td>
+  <td style='border-top:none;border-left:none'>Hauser</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Ara the Star Engineer</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„An
+  inspiring &amp; inclusive STEM book that teaches about computing, featuring
+  real-life engineering trailblazers.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.arastarengineer.com/en" target="_parent">https://www.arastarengineer.com/en</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Kinder-Sachbuch</td>
+  <td style='border-top:none;border-left:none'>Komal</td>
+  <td style='border-top:none;border-left:none'>Singh</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Die rote Zora und ihre Bande</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Ein
+  spannender Abenteuerklassiker für Mädchen und Jungen ab 10 Jahren“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.fischerverlage.de/buch/kurt-held-die-rote-zora-und-ihre-bande-9783733500917"
+  target="_parent">https://www.fischerverlage.de/buch/kurt-held-die-rote-zora-und-ihre-bande-9783733500917</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Kinderbuch</td>
+  <td style='border-top:none;border-left:none'>Kurt</td>
+  <td style='border-top:none;border-left:none'>Held</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=224 style='height:168.0pt'>
+  <td height=224 width=320 style='height:168.0pt;border-top:none;
+  width:240pt'>Schwester Fidelma</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Mit
+  Schwester Fidelma hat der britische Autor Peter Berresford Ellis, der hinter
+  dem Pseudonym Peter Tremayne steht, eine einzigartige Figur erschaffen.
+  Fidelma ist irische Nonne im 7. Jahrhundert und zugleich angesehene Anwältin
+  mit königlicher Abstammung. Als im Jahr 664 bei einer Synode zunächst die
+  Äbtissin und anschließend weitere Mitglieder der Kirche ermordet werden, geht
+  Schwester Fidelma den Taten auf den Grund. Von da an wird sie immer wieder in
+  spannende Kriminalfälle verwickelt, die ihren Lesern nicht nur den Atem
+  stocken und das Blut in den Adern gefrieren lassen, sondern ihnen auch einen
+  (fiktiven) Einblick in eine Welt lange vor unserer Zeit gewähren. Die
+  englischen Ausgaben erscheinen seit 1994, die deutschen Übersetzungen seit
+  1998.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.lovelybooks.de/autor/Peter-Tremayne/reihe/Schwester-Fidelma-in-Reihenfolge-1015498378/"
+  target="_parent">https://www.lovelybooks.de/autor/Peter-Tremayne/reihe/Schwester-Fidelma-in-Reihenfolge-1015498378/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Peter</td>
+  <td style='border-top:none;border-left:none'>Tremayne</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Stress</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Warum
+  Frauen leichter ausbrennen und was sie für sich tun können<br>
+    OT: Burnout</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.randomhouse.de/Paperback/Stress/Emily-Nagoski/Koesel/e545778.rhd">https://www.randomhouse.de/Paperback/Stress/Emily-Nagoski/Koesel/e545778.rhd</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Ratgeber?</td>
+  <td style='border-top:none;border-left:none'>Emily</td>
+  <td style='border-top:none;border-left:none'>Nagoski</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Stress</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Warum
+  Frauen leichter ausbrennen und was sie für sich tun können<br>
+    OT: Burnout</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a href="https://www.randomhouse.de/Paperback/Stress/Emily-Nagoski/Koesel/e545778.rhd">https://www.randomhouse.de/Paperback/Stress/Emily-Nagoski/Koesel/e545778.rhd</a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Ratgeber?</td>
+  <td style='border-top:none;border-left:none'>Amelia</td>
+  <td style='border-top:none;border-left:none'>Nagoski</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Auch Mütter dürfen 'Nein' sagen</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.amazon.de/Auch-Mütter-dürfen-Nein-sagen/dp/3608944834"
+  target="_parent">https://www.amazon.de/Auch-M%C3%BCtter-d%C3%BCrfen-Nein-sagen/dp/3608944834</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Ratgeber?</td>
+  <td style='border-top:none;border-left:none'>Gertraud</td>
+  <td style='border-top:none;border-left:none'>Finger</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Die Päpstin</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Die
+  Päpstin (Originaltitel: Pope Joan) ist ein historischer Roman der
+  US-amerikanischen Schriftstellerin Donna Woolfolk Cross aus dem Jahr 1996.
+  Die Autorin verarbeitet darin den literarischen Stoff der Geschichte der
+  legendären Päpstin Johanna.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://de.wikipedia.org/wiki/Die_Päpstin" target="_parent">https://de.wikipedia.org/wiki/Die_P%C3%A4pstin</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Donna W.</td>
+  <td style='border-top:none;border-left:none'>Cross</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>Gespräche mit meiner Katze</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Sara
+  hätte nie geglaubt, dass Katzen reden können. Sie hätte aber auch nie
+  geglaubt, dass sie jemals wieder glücklich sein würde. Bis Sibila in ihr
+  Leben tritt. Die geheimnisvolle Abessinierkatze kann nicht nur sprechen, sie
+  scheint auch mehr über Sara zu wissen als diese selbst: von Saras stressigem
+  Agentur-Job, ihrer kriselnden Beziehung und ihrem letzten Schwächeanfall.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.rowohlt.de/buch/eduardo-jauregui-gespraeche-mit-meiner-katze-9783499272622"
+  target="_parent">https://www.rowohlt.de/buch/eduardo-jauregui-gespraeche-mit-meiner-katze-9783499272622</span></a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Eduardo</td>
+  <td style='border-top:none;border-left:none'>Jáuregui</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Technically Wrong: Sexist Apps, Biased Algorithms, and Other
+  Threats of Toxic Tech</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>sexistisches
+  Design</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://wwnorton.com/books/Technically-Wrong/" target="_parent">https://wwnorton.com/books/Technically-Wrong/</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Sara</td>
+  <td style='border-top:none;border-left:none'>Wachter-Boettcher</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Earthgirl</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Jarra
+  ist ein 'Earth Girl'. Während sich der Rest der Menschheit aufmacht, fremde
+  Galaxien zu entdecken, ist Jarra zu einem Leben auf dem alten Heimatplaneten
+  verdammt</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.lovelybooks.de/autor/Janet-Edwards/reihe/Earth-Girl-in-Reihenfolge-1056564522/"
+  target="_parent">https://www.lovelybooks.de/autor/Janet-Edwards/reihe/Earth-Girl-in-Reihenfolge-1056564522/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch/engli<span
+  style='display:none'>sch</span></td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Janet</td>
+  <td style='border-top:none;border-left:none'>Edwards</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Die Ägypterinnen eine Kulturgeschichte</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.amazon.de/-/en/Christian-Jacq/dp/3538070741/ref=sr_1_1?dchild=1&amp;keywords=ägypterinnen+kulturgeschichte&amp;qid=1608992509&amp;sr=8-1"
+  target="_parent">https://www.amazon.de/-/en/Christian-Jacq/dp/3538070741/ref=sr_1_1?dchild=1&amp;keywords=%C3%A4gypterinnen+kulturgeschichte&amp;qid=1608992509&amp;sr=8-1</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch</td>
+  <td style='border-top:none;border-left:none'>Christian</td>
+  <td style='border-top:none;border-left:none'>Jacq</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>Die Optimierer</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Im
+  Jahr 2052 hat sich die Bundesrepublik Europa vom Rest der Welt abgeschottet.
+  Hochentwickelte Roboter sorgen für Wohlstand und Sicherheit in der
+  sogenannten Optimalwohlökonomie. Hier werden alle Bürger von der Agentur für
+  Lebensberatung rund um die Uhr überwacht, um für jeden Einzelnen den
+  perfekten Platz in der Gesellschaft zu finden.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.luebbe.de/bastei-luebbe/buecher/science-fiction-romane/die-optimierer/id_6185617"
+  target="_parent">https://www.luebbe.de/bastei-luebbe/buecher/science-fiction-romane/die-optimierer/id_6185617</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Teresa</td>
+  <td style='border-top:none;border-left:none'>Hannick</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>Die Unvollkommenen</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Bundesrepublik
+  Europa, 2057: Es herrscht Frieden in der Optimalwohlökonomie, einem
+  lückenlosen Überwachungssystem, in dem mithilfe von Kameras, Linsen und Chips
+  alles erfasst und gespeichert wird. Menschen und hochentwickelte Roboter
+  sollen Seite an Seite leben. Störenfriede werden weggesperrt.<br>
+    So auch die Systemkritikerin Lila.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.luebbe.de/bastei-luebbe/buecher/science-fiction-romane/die-unvollkommenen/id_7044899"
+  target="_parent">https://www.luebbe.de/bastei-luebbe/buecher/science-fiction-romane/die-unvollkommenen/id_7044899</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Teresa</td>
+  <td style='border-top:none;border-left:none'>Hannick</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Grrrl</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Grrrl
+  is the story of a young girl searching for herself in the midst of the riot
+  grrl movement.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.goodreads.com/book/show/449666.Grrrl" target="_parent">https://www.goodreads.com/book/show/449666.Grrrl</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Jennifer</td>
+  <td style='border-top:none;border-left:none'>Whiteford</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=149 style='height:112.0pt'>
+  <td height=149 width=320 style='height:112.0pt;border-top:none;
+  width:240pt'>Frauen*rechte und Frauen*hass - Antifeminismus und die
+  Ethnisierung.</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Wo
+  antifaschistische Kritik diese rassistischen Frauenrechtskämpfe als reine
+  Instrumentalisierung abtut, wird verkannt, dass das Engagement rechter
+  Frauen* auch als Selbstermächtigung funktioniert – die jedoch
+  antifeministisch bleibt.<br>
+    <br>
+    Dagegen stellt dieses Buch einen Feminismus, der die patriarchale Ordnung
+  hinterfragt, Männlichkeit nicht heilen will und grundlegend antifaschistisch
+  ist.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.verbrecherverlag.de/book/detail/1004" target="_parent">https://www.verbrecherverlag.de/book/detail/1004</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>AK FeIn</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>Die Milfmädchenrechnung</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Mütter
+  sollen ja gemeinhin vieles – allem voran: perfekt sein. Perfekt
+  funktionieren, perfekt lieben, perfekt erziehen, perfekt kochen, perfekt
+  arbeiten und sowieso immer und überall perfekt reagieren. Aber natürlich
+  auch: perfekt aussehen. Und das bedeutet, sich um die Frage zu kümmern, wie
+  fuckable sie im Auge des Hetero-Mannes ist.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://editionf.com/interview-katja-grach-milf-maedchenrechnung-buch-muetter/"
+  target="_parent">https://editionf.com/interview-katja-grach-milf-maedchenrechnung-buch-muetter/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Katja</td>
+  <td style='border-top:none;border-left:none'>Gracht</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Avatar the last airbender</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender#Books"
+  target="_parent">https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender#Books</span></a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Becoming</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://becomingmichelleobama.com/" target="_parent">https://becomingmichelleobama.com/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch/engli<span
+  style='display:none'>sch</span></td>
+  <td style='border-top:none;border-left:none'>Biographie</td>
+  <td style='border-top:none;border-left:none'>Michelle</td>
+  <td style='border-top:none;border-left:none'>Obama</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Die rosa-hellblau Falle</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Rollenklischees
+  im (Familien-) Alltag und wie man ihnen entkommt</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://rosa-hellblau-falle.de/rosa-hellblau-falle/" target="_parent">https://rosa-hellblau-falle.de/rosa-hellblau-falle/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Almut</td>
+  <td style='border-top:none;border-left:none'>Schnerring</td>
+  <td style='border-top:none;border-left:none'>36c3</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Die rosa-hellblau Falle</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Rollenklischees
+  im (Familien-) Alltag und wie man ihnen entkommt</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://rosa-hellblau-falle.de/rosa-hellblau-falle/" target="_parent">https://rosa-hellblau-falle.de/rosa-hellblau-falle/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>Sascha</td>
+  <td style='border-top:none;border-left:none'>Verlan</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>All About Love: New Visions</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'><span
+  style='mso-spacerun:yes'> </span>Hooks combines personal anecdotes as well as
+  psychological and philosophical ideas to develop and strengthen her argument.
+  She focuses on romantic love and believes that in American culture men have
+  been socialized to mistrust the value and power of love while women have been
+  socialized to be loving in most situations – even when their need to receive
+  love goes unmet.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://en.wikipedia.org/wiki/All_About_Love:_New_Visions"
+  target="_parent">https://en.wikipedia.org/wiki/All_About_Love:_New_Visions</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Feminismus/Queer</td>
+  <td style='border-top:none;border-left:none'>bell</td>
+  <td style='border-top:none;border-left:none'>hooks</td>
+  <td style='border-top:none;border-left:none'>Workshop
+  &quot;kritische Männlichkeit&quot;</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>The Will to Change<br>
+    Men, Masculinity, and Love</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>https://www.goodreads.com/book/show/17601.The_Will_to_Change</td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Männlichkeit</td>
+  <td style='border-top:none;border-left:none'>bell</td>
+  <td style='border-top:none;border-left:none'>hooks</td>
+  <td style='border-top:none;border-left:none'>Workshop
+  &quot;kritische Männlichkeit&quot;</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Man Up<br>
+    Surviving Modern Masculinity</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.fembooks.de/Jack-Urwin-Man-Up-Surviving-Modern-Masculinity"
+  target="_parent">https://www.fembooks.de/Jack-Urwin-Man-Up-Surviving-Modern-Masculinity</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Männlichkeit</td>
+  <td style='border-top:none;border-left:none'>Jack</td>
+  <td style='border-top:none;border-left:none'>Urwin</td>
+  <td style='border-top:none;border-left:none'>Workshop
+  &quot;kritische Männlichkeit&quot;</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Masculinities</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="http://www.raewynconnell.net/p/masculinities_20.html" target="_parent">http://www.raewynconnell.net/p/masculinities_20.html</span></a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Männlichkeit</td>
+  <td style='border-top:none;border-left:none'>Raewyn W.</td>
+  <td style='border-top:none;border-left:none'>Connell</td>
+  <td style='border-top:none;border-left:none'>Workshop
+  &quot;kritische Männlichkeit&quot;</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>For the Love of Men: A New Vision for Mindful Masculinity</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="http://www.elizabethplank.com/book" target="_parent">http://www.elizabethplank.com/book</span></a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sachbuch,
+  Männlichkeit</td>
+  <td style='border-top:none;border-left:none'>Liz</td>
+  <td style='border-top:none;border-left:none'>Plank</td>
+  <td style='border-top:none;border-left:none'>Workshop
+  &quot;kritische Männlichkeit&quot;</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Good Night Stories for Rebel Girls</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„100
+  Geschichten über 100 beeindruckende Frauen, die die Welt bewegen – eine
+  spannende Lektüre, illustriert von über 60 Künstlerinnen aus aller Welt“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.hanser-literaturverlage.de/buch/good-night-stories-for-rebel-girls/978-3-446-25690-3/"
+  target="_parent">https://www.hanser-literaturverlage.de/buch/good-night-stories-for-rebel-girls/978-3-446-25690-3/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch/engli<span
+  style='display:none'>sch</span></td>
+  <td style='border-top:none;border-left:none'>Kurzgeschichten</td>
+  <td style='border-top:none;border-left:none'>Elena</td>
+  <td style='border-top:none;border-left:none'>Favilli</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Good Night Stories for Rebel Girls</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„100
+  Geschichten über 100 beeindruckende Frauen, die die Welt bewegen – eine
+  spannende Lektüre, illustriert von über 60 Künstlerinnen aus aller Welt“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.hanser-literaturverlage.de/buch/good-night-stories-for-rebel-girls/978-3-446-25690-3/"
+  target="_parent">https://www.hanser-literaturverlage.de/buch/good-night-stories-for-rebel-girls/978-3-446-25690-3/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch/engli<span
+  style='display:none'>sch</span></td>
+  <td style='border-top:none;border-left:none'>Kurzgeschichten</td>
+  <td style='border-top:none;border-left:none'>Francesca</td>
+  <td style='border-top:none;border-left:none'>Cavallo</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Women in Science<br>
+    50 Fearless Pioneers Who Changed the World</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„Women
+  in Science highlights the contributions of fifty notable women to the fields
+  of science, technology, engineering, and mathematics (STEM) from the ancient
+  to the modern world.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.rachelignotofskydesign.com/women-in-science"
+  target="_parent">https://www.rachelignotofskydesign.com/women-in-science</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Kurzgeschichten</td>
+  <td style='border-top:none;border-left:none'>Rachel</td>
+  <td style='border-top:none;border-left:none'>Ignotofsky</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>I love Dick</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>about
+  growing the relationship away from heteronormativity</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.matthes-seitz-berlin.de/buch/i-love-dick.html"
+  target="_parent">https://www.matthes-seitz-berlin.de/buch/i-love-dick.html</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch/deut<span
+  style='display:none'>sch</span></td>
+  <td style='border-top:none;border-left:none'>Roman</td>
+  <td style='border-top:none;border-left:none'>Chris</td>
+  <td style='border-top:none;border-left:none'>Kraus</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Sword Princess Amalthea</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="http://natalias.batista.se/spa/comic.html" target="_parent">http://natalias.batista.se/spa/comic.html</span></a></td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Manga</td>
+  <td style='border-top:none;border-left:none'>Natalia</td>
+  <td style='border-top:none;border-left:none'>Batista</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=131 style='height:98.0pt'>
+  <td height=131 width=320 style='height:98.0pt;border-top:none;
+  width:240pt'>Der Ursprung der Welt</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„In
+  Der Ursprung der Welt zeichnet die Autorin Liv Strömquist die
+  Kulturgeschichte der Vulva nach – von der Bibel bis Freud, vom unbeholfenen
+  Biologieunterricht bis hin zur aktuellen Tamponwerbung. Sie bedient sich des
+  Mediums Comic, um in sieben Episoden auf nonchalante und scharfsinnige Art
+  die noch immer geltenden patriarchalen Machtverhältnisse in Frage zu stellen
+  und bestehende Probleme pointiert zu benennen.“</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.avant-verlag.de/comics/der-ursprung-der-welt/"
+  target="_parent">https://www.avant-verlag.de/comics/der-ursprung-der-welt/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Comic</td>
+  <td style='border-top:none;border-left:none'>Liv</td>
+  <td style='border-top:none;border-left:none'>Strömquist</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=112 style='height:84.0pt'>
+  <td height=112 width=320 style='height:84.0pt;border-top:none;
+  width:240pt'>Der Ursprung der Liebe</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>„What
+  is love?“, fragte sich der deutsche Eurodance-Star Haddaway bereits im Jahre
+  1993. In Der Ursprung der Liebe sucht Liv Strömquist neue Antworten auf diese
+  allgegenwärtige Frage. Ihre Suche führt sie von der Prüderie des 19.
+  Jahrhunderts, über nordische Göttinnen, Anti-Romantik und soziologische
+  Theorien, bis hin zur Psychoanalyse.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.avant-verlag.de/comics/der-ursprung-der-liebe/"
+  target="_parent">https://www.avant-verlag.de/comics/der-ursprung-der-liebe/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Comic</td>
+  <td style='border-top:none;border-left:none'>Liv</td>
+  <td style='border-top:none;border-left:none'>Strömquist</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>I'm every woman</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>In
+  I’m every woman setzt sich Liv Strömquist mit dem Mythos vom männlichen Genie
+  auseinander, indem sie die Geschichte aus weiblicher Perspektive umschreibt.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.avant-verlag.de/comics/i-m-every-woman/" target="_parent">https://www.avant-verlag.de/comics/i-m-every-woman/</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Comic</td>
+  <td style='border-top:none;border-left:none'>Liv</td>
+  <td style='border-top:none;border-left:none'>Strömquist</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Ich fühl's nicht</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Liv
+  Strömquists neues Buch „Ich fühl‘s nicht“ ist ein Plädoyer für eine von den
+  Zwängen der Konsumgesellschaft befreite Liebe.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.avant-verlag.de/comics/ich-fuehls-nicht/#cc-m-product-8893223420"
+  target="_parent">https://www.avant-verlag.de/comics/ich-fuehls-nicht/#cc-m-product-8893223420</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Comic</td>
+  <td style='border-top:none;border-left:none'>Liv</td>
+  <td style='border-top:none;border-left:none'>Strömquist</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Digital Dead End:<br>
+    Fighting for Social Justice in the Information Age</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>How
+  she joins a feminist movement in the USA</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://mitpress.mit.edu/books/digital-dead-end" target="_parent">https://mitpress.mit.edu/books/digital-dead-end</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Virginia</td>
+  <td style='border-top:none;border-left:none'>Eubanks</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Ronja Räubertochter</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://de.wikipedia.org/wiki/Ronja_Räubertochter" target="_parent">https://de.wikipedia.org/wiki/Ronja_R%C3%A4ubertochter</span></a></td>
+  <td style='border-top:none;border-left:none'>deutsch</td>
+  <td style='border-top:none;border-left:none'>Kinderbuch</td>
+  <td style='border-top:none;border-left:none'>Astrid</td>
+  <td style='border-top:none;border-left:none'>Lindgren</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Invisible Women<br>
+    Exposing Data Bias in a World Designed for Men</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://www.goodreads.com/book/show/41104077-invisible-women"
+  target="_parent">https://www.goodreads.com/book/show/41104077-invisible-women</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Caroline</td>
+  <td style='border-top:none;border-left:none'>Criado Perez</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Unlocking the Clubhouse:<br>
+    Women in Computing</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'><span
+  style='mso-spacerun:yes'> </span>Understanding and overcoming the gender gap
+  in computer science education.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://mitpress.mit.edu/books/unlocking-clubhouse" target="_parent">https://mitpress.mit.edu/books/unlocking-clubhouse</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Jane</td>
+  <td style='border-top:none;border-left:none'>Margolis</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'><font class="font6">Unlocking the Clubhouse:</font><font
+  class="font6"><br>
+    Women in Computing</font></td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'><span
+  style='mso-spacerun:yes'> </span>Understanding and overcoming the gender gap
+  in computer science education.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://mitpress.mit.edu/books/unlocking-clubhouse" target="_parent">https://mitpress.mit.edu/books/unlocking-clubhouse</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Sachbuch, Tech</td>
+  <td style='border-top:none;border-left:none'>Allan</td>
+  <td style='border-top:none;border-left:none'>Fisher</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>King Kong Theory</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'><a
+  href="https://en.wikipedia.org/wiki/King_Kong_Theory" target="_parent">https://en.wikipedia.org/wiki/King_Kong_Theory</span></a></td>
+  <td style='border-top:none;border-left:none'>englisch</td>
+  <td style='border-top:none;border-left:none'>Autobiographisches
+  Essay</td>
+  <td style='border-top:none;border-left:none'>Virginie</td>
+  <td style='border-top:none;border-left:none'>Despentes</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=299 style='height:224.0pt'>
+  <td height=299 width=320 style='height:224.0pt;border-top:none;
+  width:240pt'>Weapons of Math Destruction<br>
+    How Big Data Increases Inequality and Threatens Democrac</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Die
+  promovierte Mathematikerin Cathy O'Neil beschreibt die Zusammenhänge zwischen
+  den teilweise gut gemeinten, aber leider nicht ganz zuende gedachten
+  Algorithmen, die unseren Alltag beeinflußen und die für maßgebliche
+  Konsequenzen sorgen. Der Text ist sehr sachlich formuliert und enthält
+  zahlreiche Quellen zum<br>
+    <br>
+    weiteren nachschlagen. Aufgrund der zahlreichen Beispiele, die das Thema
+  allerdings sehr greifbar und verständlich machen, eignet es sich leider nicht
+  für die schnelle Lektüre. Das Buch wurde in unterschiedlichen Sprachen
+  übersetzt; unter anderem auf Deutsch (Angriff der Algorithmen: Wie sie Wahlen
+  manipulieren, Berufschancen zerstören und unsere Gesundheit gefährden),
+  Französisch und Spanisch. Für Heacksen empfohlen, da erstens von einer Frau
+  geschrieben und zweitens der Ton der lesenden Person keine Kompetenz
+  abspricht, sondern auf Augenhöhe und respektvoll begegnet.</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Cathy</td>
+  <td style='border-top:none;border-left:none'>O'Neil</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=75 style='height:56.0pt'>
+  <td height=75 width=320 style='height:56.0pt;border-top:none;
+  width:240pt'>Ada Lovelace<br>
+    Die Pionierin der Computertechnik und ihre Nachfolgerinnen</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>Begleitend
+  zur Ausstellung &quot;Am Anfang war Ada - Frauen in der
+  Computergeschichte&quot; im Heinz Nixdorf MuseumsForum in Paderborn vom 2.
+  September 2015 bis zum 10. Juli 2016</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sybille</td>
+  <td style='border-top:none;border-left:none'>Krämer</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Athena Rising:<br>
+    How and Why Men Should Mentor Women</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Athena Rising:<br>
+    How and Why Men Should Mentor Women</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>W. Brad</td>
+  <td style='border-top:none;border-left:none'>Johnson</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Athena Rising:<br>
+    How and Why Men Should Mentor Women</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>David G.</td>
+  <td style='border-top:none;border-left:none'>Smith</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Toki Pona<br>
+    The Language of Good</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sonja</td>
+  <td style='border-top:none;border-left:none'>Lang</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Die große Stille<br>
+    Zerrissene Erde (Bd. 1)</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>N. K.</td>
+  <td style='border-top:none;border-left:none'>Jemisin</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Die große Stille<br>
+    Brennender Fels (Bd. 2)</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Die große Stille<br>
+    Steinerner Himmel (Bd. 3)</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Too Like the Lightning</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>Terra
+  Ignota Band 1</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Ada</td>
+  <td style='border-top:none;border-left:none'>Palmer</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Der geheime Schlüssel zum Universum</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Lucy</td>
+  <td style='border-top:none;border-left:none'>Hawking</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Der geheime Schlüssel zum Universum</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Stephen</td>
+  <td style='border-top:none;border-left:none'>Hawking</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Der IT Security Manager</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>Aktuelles
+  Praxiswissen für IT Security Manager und IT-Sicherheitsbeauftragte in
+  Unternehmen und Behörden</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Heinrich</td>
+  <td style='border-top:none;border-left:none'>Kersten</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Der IT Security Manager</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>Aktuelles
+  Praxiswissen für IT Security Manager und IT-Sicherheitsbeauftragte in
+  Unternehmen und Behörden</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Gerhard</td>
+  <td style='border-top:none;border-left:none'>Klett</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>IT-Projektmanagement kompakt</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Pascal</td>
+  <td style='border-top:none;border-left:none'>Mangold</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=56 style='height:42.0pt'>
+  <td height=56 width=320 style='height:42.0pt;border-top:none;
+  width:240pt'>Aufstand aus der Küche</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>Reproduktionsarbeit
+  im globalen Kapitalismus und die unvollendete feministische Revolution<br>
+    Aus der Reihe Kitchen Politics</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Silvia</td>
+  <td style='border-top:none;border-left:none'>Federici</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Gender in Games</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Nina</td>
+  <td style='border-top:none;border-left:none'>Kiel</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=336 style='height:252.0pt'>
+  <td height=336 width=320 style='height:252.0pt;border-top:none;
+  width:240pt'>Lillith's Brood</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>In
+  dieser Trilogie geht es darum, dass die Menschheit gerade die Welt zerstört
+  (hat) und genau in diesem Moment Aliens an der Erde vorbei kommen. Die
+  einzelnen Bände der Trilogie heissen: (1987) Dämmerung / Dawn // (1988)
+  Rituale / Adulthood Rites // (1989) Imago / Imago // Im großen und ganzen ist
+  die Trilogie sehr gesellschaftskritisch. Diese Rasse der Aliens heiss
+  Ooankali und besitzt 3 Geschlechter. Im Laufe der Geschichte werden Familien
+  aus 3 Aliens und 2 Menschen. Jedes Kind hat also 5 Elter. Kinder bleiben bis
+  zur Pubertät &quot;eka&quot; ein Wort, dass aus dem sanskrit kommend one /
+  eins heisst und bedeutet, das Kinder bis dahin geschlechtslos sind und
+  während der Pubertät sich das Geschlecht erst ausbildet. Das Buch selber
+  benötigt viele Contentwarnings. Die Autorin war Afroamerikanerin und
+  Science-Fiction Autorin.</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Octavia E.</td>
+  <td style='border-top:none;border-left:none'>Butler</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Wunder, Beweise und Tatsachen<br>
+    Zur Geschichte der Rationalität</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Lorraine</td>
+  <td style='border-top:none;border-left:none'>Daston</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Wunder, Beweise und Tatsachen<br>
+    Zur Geschichte der Rationalität</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Katharine</td>
+  <td style='border-top:none;border-left:none'>Park</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Down Girl<br>
+    Die Logik der Misogynie</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Kate</td>
+  <td style='border-top:none;border-left:none'>Manne</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=37 style='height:28.0pt'>
+  <td height=37 width=320 style='height:28.0pt;border-top:none;
+  width:240pt'>Programmed Inequality</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>How
+  Britain Discarded Women Technologists and Lost Its Edge in Computing</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>  </span>Marie L.</td>
+  <td style='border-top:none;border-left:none'>Hicks</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=93 style='height:70.0pt'>
+  <td height=93 width=320 style='height:70.0pt;border-top:none;
+  width:240pt'>Lysistrate</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>Den
+  Frauen reicht’s. Sie haben genug vom Krieg und wollen, dass ihre Stadt Athen
+  endlich Frieden schließt, auch wenn dieses Ziel sich bei den kriegstollen
+  Männern nur mit dem letzten Druckmittel erreichen lässt: No more sex!</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'><span
+  style='mso-spacerun:yes'>  </span>Aristophanes</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Ich bin von hier. Hört auf zu fragen!</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Ferda</td>
+  <td style='border-top:none;border-left:none'>Ataman</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+ <tr height=19 style='height:14.0pt'>
+  <td height=19 width=320 style='height:14.0pt;border-top:none;
+  width:240pt'>Alte weiße Männer</td>
+  <td width=451 style='border-top:none;border-left:none;width:339pt'>&nbsp;</td>
+  <td width=340 style='border-top:none;border-left:none;width:255pt'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>&nbsp;</td>
+  <td style='border-top:none;border-left:none'>Sophie</td>
+  <td style='border-top:none;border-left:none'>Passmann</td>
+  <td style='border-top:none;border-left:none'>Camp</td>
+  
+ </tr>
+</table>
+
+</body>
+
 </html>
