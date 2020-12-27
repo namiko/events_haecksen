@@ -721,7 +721,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{<awareness-team>\/main.json}"
+                 "value":"{<kalkspace>\/main.json}"
                 }],
          "type":"tilelayer",
          "visible":true,
