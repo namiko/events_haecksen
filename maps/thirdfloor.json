@@ -157,7 +157,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"ExitSceneUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"{<lebkuch-is>\/main.json}"
                 }],
