@@ -83,9 +83,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"jitsiRoom",
+                 "name":"openWebsite",
                  "type":"string",
-                 "value":"de_haecksen_kueche"
+                 "value":"https:\/\/events.haecksen.org\/kueche.html"
                 }],
          "type":"tilelayer",
          "visible":true,

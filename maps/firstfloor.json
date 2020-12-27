@@ -451,7 +451,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/namiko.github.io\/assembly\/haecksen-rC3-static\/index.html#event"
+                 "value":"https:\/\/events.haecksen.org\/#event"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -829,9 +829,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"jitsiRoom",
+                 "name":"openWebsite",
                  "type":"string",
-                 "value":"de_haecksen_feuer"
+                 "value":"https:\/\/events.haecksen.org\/feuer.html"
                 }],
          "type":"tilelayer",
          "visible":true,
