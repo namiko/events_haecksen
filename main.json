@@ -139,7 +139,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{<lobby>\/erfas-spaces-north.json#start_haecksen}"
+                 "value":"{<lobby>\/maps\/erfas-spaces-north.json#start_haecksen}"
                 }],
          "type":"tilelayer",
          "visible":true,
