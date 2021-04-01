@@ -30,6 +30,6 @@ DTSTART;TZID=Europe/Berlin:20210402T140000
 DTEND;TZID=Europe/Berlin:20210402T150000
 SUMMARY:AMA Informatikstudium
 URL:https://events.haecksen.org/awesome_ada.html
-DESCRIPTION:AMA - Ask me Anything - zum Informatikstudiumm von zwei Haecksen für alle interessierten Menschen. Bachelor\, Master\, Studienfinanzierung\, Fernuni\, Nahuni\, ... und welche Dinge kann man danach alles tun (spoiler: alles). 
+DESCRIPTION:AMA - Ask me Anything - zum Informatikstudium von zwei Haecksen für alle interessierten Menschen. Bachelor\, Master\, Studienfinanzierung\, Fernuni\, Nahuni\, ... und welche Dinge kann man danach alles tun (spoiler: alles). 
 END:VEVENT
 END:VCALENDAR
