@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+X-WR-CALNAME:r2r-ADHS
+NAME:r2r-ADHS
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210401T105129Z
+UID:20210401T105129Z-103805185@marudot.com
+DTSTART;TZID=Europe/Berlin:20210403T190000
+DTEND;TZID=Europe/Berlin:20210403T200000
+SUMMARY:Austausch zu ADHS
+URL:https://events.haecksen.org/awesome_ada.html
+DESCRIPTION:Als neurodiverse FNTIs haben wir ganz eigene Schwierigkeiten. ADHS wird immer noch als Jungen-Phänomen wahrgenommen\, und Mädchen oft auch "ausgetrieben"\, sodass wir Verhalten internalisieren. Dies soll als Austauschplatform für Leute\, die sich in diesem Spektrum wiederfinden (ob offiziell diagnostiziert oder nicht)\, dienen. Lasst uns Strategien austauschen und uns nicht so alleine fühlen! 
+LOCATION:Awesome Ada
+END:VEVENT
+END:VCALENDAR
