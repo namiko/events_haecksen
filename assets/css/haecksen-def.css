@@ -76,17 +76,7 @@
 }
 
 .event-tab .tab-content .event-content .single-event {
-  background-color: #ffe5f8;
-}
-
-.event-tab .tab-content .event-content .single-event .event-anchor {
-  font-size: 0.3em;
-  color: inherit;
-  font-weight: normal;
-
-  /* Hack so the links don't jump to inside the top bar */
-  margin-top: -150px;
-  padding-top: 150px;
+    background-color: #ffe5f8;
 }
 
 .event-image img {
