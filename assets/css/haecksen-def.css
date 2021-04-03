@@ -75,8 +75,23 @@
     border-color: #fff;
 }
 
+.scrollanchor {
+  font-size: 0.5em;
+  color: inherit;
+  font-weight: normal;
+
+  /* Hack so the links don't jump to inside the top bar */
+  margin-top: -155px;
+  padding-top: 155px;
+}
+
+.daypanel {
+  margin-top: 5em;
+  margin-bottom: -3em;
+}
+
 .event-tab .tab-content .event-content .single-event {
-    background-color: #ffe5f8;
+  background-color: #ffe5f8;
 }
 
 .event-image img {
