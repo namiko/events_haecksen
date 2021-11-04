@@ -57,8 +57,8 @@
 }
 
 .about-content .date span::before {
-    border: 6px solid rgba(24, 255, 125, 0.18);
-    width: 125px;
+    border: 6px solid #f9ca9e;
+    width: 130px;
 }
 
 .counter-area {
