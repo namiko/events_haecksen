@@ -24,7 +24,9 @@
 }
 
 .navbar-area .navbar .navbar-nav .nav-item a {
-    color: #000;
+    color: #f3943d;
+    text-shadow: 1px 1px #fff;
+    text-transform: uppercase;
 }
 
 .header-countdown .single-count-content.count-color-1 .count, 
@@ -35,16 +37,18 @@
 .header-countdown .single-count-content.count-color-3 .text,
 .header-countdown .single-count-content.count-color-4 .count, 
 .header-countdown .single-count-content.count-color-4 .text {
-    color: #000;
+    color: #f3943d;
+    text-shadow: 1px 1px #fff;
 }
 
 .header-content .header-title {
     font-size: 57px;
-    color: #000;
+    color: #f3943d;
+    text-shadow: 1px 1px #fff;
 }
 
 .header-content .sub-title {
-    color: #000;
+    color: #fff;
 }
 
 .about-content .date span {
