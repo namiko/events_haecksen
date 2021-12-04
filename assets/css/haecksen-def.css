@@ -59,6 +59,20 @@ h2 {
     color: #fff;
 }
 
+.buy-tickets {
+    color: #fff;
+    background: #f3943d;
+    padding: 7px 22px;
+    margin: 0 0 0 15px;
+    border-radius: 50px;
+    border: 2px solid #f3943d;
+    transition: all ease-in-out 0.3s;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
 .about-content .date span {
     color: #2B4A49;
     padding-right: 15px;
