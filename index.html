@@ -185,66 +185,7 @@
         </div> <!-- container -->
     </section>
 
-    <!--====== ABOUT PART ENDS ======-->
-	
-   <!-- Schedule START -->
-	<section id="event" class="event-schedule pt-115 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="title">Fahrplan</h2>
-                        <p class="text">Hier findest du den Fahrplan für die kommenden Tage. Bei einigen Workshops würden wir uns sehr über
-                            eine <a href="https://pretix.eu/haecksen/rC3-workshops/" target="_blank">Anmeldung</a> freuen, damit wir Dir einen Platz reservieren können.</p>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="event-tab mt-60">
-                        <ul class="nav justify-content-between align-items-center" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="active" id="day-0-tab" data-toggle="tab" href="#day-0" role="tab" aria-controls="day-1" aria-selected="true">
-                                    <h4 class="nav-title">Tag 0</h4>
-                                    <span>26. Dezember 2020</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="day-1-tab" data-toggle="tab" href="#day-1" role="tab" aria-controls="day-1" aria-selected="false">
-                                    <h4 class="nav-title">Tag 1</h4>
-                                    <span>27. Dezember 2020</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="day-2-tab" data-toggle="tab" href="#day-2" role="tab" aria-controls="day-2" aria-selected="false">
-                                    <h4 class="nav-title">Tag 2</h4>
-                                    <span>28. Dezember 2020</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="day-3-tab" data-toggle="tab" href="#day-3" role="tab" aria-controls="day-3" aria-selected="false">
-                                    <h4 class="nav-title">Tag 3</h4>
-                                    <span>29. Dezember 2020</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a id="day-4-tab" data-toggle="tab" href="#day-4" role="tab" aria-controls="day-4" aria-selected="false">
-                                    <h4 class="nav-title">Tag 4</h4>
-                                    <span>30. Dezember 2020</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-curl "https://pretalx.c3voc.de/rc3-2021-haecksen/schedule/export/schedule.json" | jq -jr '.schedule| .conference | .days[] | select(.date=="2021-12-29") | .rooms[] | .[] | "\t<!-- single event start -->\n<div class=\"single-event d-md-flex mt-30\">\n<div class=\"event-image\">\n<img src=\"assets/images/haecksen/hexe-icon.png\" alt=\"Event\">\n</div>\n<div class=\"event-content media-body\">\n<h4 class=\"event-title\">\n\t<a href=\"\(.url)\">\(.title)</a></h4><a class=\"scrollanchor\" name=\"\(.slug)\" href=\"#\(.slug)\">⚓</a>\n\t<p class=\"text\">\n\t\(.abstract)</p>\n\t\t<ul class=\"event-meta\">\n\t\t<li>Start: \(.start)</li>\n\t\t<li>Länge: \(.duration)</li>\n\t\t<li>Raum: <a href=\"%\(.room)%\">\(.room)</a></li>\n\t\t<li>Wer:","\(.persons[]|.public_name,",")","\n</li>\n\t\t</ul>\n\t\t</div>\n\t\t</div>\n\t\t<!-- single event end -->"'
-                        </div>
-                    </div> <!-- event tab -->
-
-
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-   <!-- Schedule END -->	
+    <!--====== ABOUT PART ENDS ======-->	
    	
     <!--====== ROOMS PART START ======-->
 
