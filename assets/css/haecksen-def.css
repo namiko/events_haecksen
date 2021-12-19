@@ -130,7 +130,7 @@ h2 {
 }
 
 .event-tab .tab-content .event-content .single-event {
-  background-color: #ffe5f8;
+  background-color: #f7d549;
 }
 
 .event-image img {
@@ -183,6 +183,14 @@ h2 {
 
 .event-tab .tab-content .event-content .single-event::before {
     background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+}
+
+.event-content {
+   color: #2A4B4A; 
+}
+
+.event-content a {
+   color: #2A4B4A;
 }
 
 .back-to-top {
