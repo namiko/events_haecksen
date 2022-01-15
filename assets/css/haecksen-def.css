@@ -10,7 +10,7 @@ h2 {
     color: #f3943d;
 }
 
-.haecksen-logo { 
+.haecksen-logo {
     width:74px;
     max-width: 74px;
 }
@@ -41,13 +41,13 @@ h2 {
     text-transform: uppercase;
 }
 
-.header-countdown .single-count-content.count-color-1 .count, 
+.header-countdown .single-count-content.count-color-1 .count,
 .header-countdown .single-count-content.count-color-1 .text,
-.header-countdown .single-count-content.count-color-2 .count, 
-.header-countdown .single-count-content.count-color-2 .text, 
-.header-countdown .single-count-content.count-color-3 .count, 
+.header-countdown .single-count-content.count-color-2 .count,
+.header-countdown .single-count-content.count-color-2 .text,
+.header-countdown .single-count-content.count-color-3 .count,
 .header-countdown .single-count-content.count-color-3 .text,
-.header-countdown .single-count-content.count-color-4 .count, 
+.header-countdown .single-count-content.count-color-4 .count,
 .header-countdown .single-count-content.count-color-4 .text {
     color: #fff;
     text-shadow: 3px 2px #2a4b4a;
@@ -105,7 +105,7 @@ h2 {
     color: #2B4A49;
 }
 
-.main-btn.main-btn-2 {  
+.main-btn.main-btn-2 {
     background: #2B4A49;
     border-color: #fff;
 }
@@ -142,7 +142,7 @@ h2 {
 }
 
 .single-team .team-content::before {
-    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%);
 }
 
 .single-features .features-icon i {
@@ -165,7 +165,7 @@ h2 {
 }
 
 .single-features::before {
-    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%);
 }
 
 .event-tab .nav .nav-item a {
@@ -182,11 +182,11 @@ h2 {
 }
 
 .event-tab .tab-content .event-content .single-event::before {
-    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+    background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%);
 }
 
 .event-content {
-   color: #2A4B4A; 
+   color: #2A4B4A;
 }
 
 .event-content a {
@@ -194,7 +194,7 @@ h2 {
 }
 
 .back-to-top {
-  background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+  background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%);
 }
 
 .footer-contact .social li a {
@@ -215,5 +215,5 @@ h2 {
 }
 
 .footer-area::before {
-  background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%); 
+  background: linear-gradient(90deg, rgba(254,233,78,1) 0%, rgba(237,145,59,1) 100%);
 }

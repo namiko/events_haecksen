@@ -1,0 +1,42 @@
+/* Insert styling for the start page here */
+
+
+.logo-start {
+  height: 42px;
+}
+
+.navbar {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.fw-light {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-muted a {
+  color: #6c757d!important
+}
+
+.rooms img {
+  padding: 40px;
+}
+
+footer {
+  background: linear-gradient(to right, #60c1ffe6 0%, #08a774d6 100%);
+}
+
+footer p {
+  color: #fff;
+}
+
+footer .social a {
+  background-color: #fff;
+  display: inline-block;
+  width: 42px;
+  border-radius: 20%;
+  padding: 5px;
+}
+
+footer .social img {
+  width: 100%;
+}
