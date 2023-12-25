@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Haecksen Workshop - Stitch 'n bitch</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="icon" href="https://www.haecksen.org/wp-content/uploads/2019/06/haecksen-logo-gruenblau-150x150.png" sizes="32x32" />
+    <link rel="icon" href="https://www.haecksen.org/wp-content/uploads/2019/06/haecksen-logo-gruenblau.png" sizes="192x192" />
+    <link rel="apple-touch-icon-precomposed" href="https://www.haecksen.org/wp-content/uploads/2019/06/haecksen-logo-gruenblau.png" />
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Flaticon css ======-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--====== Default Haecksen css ======-->
+    <link rel="stylesheet" href="assets/css/haecksen-def.css">
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header class="header-area">
+        <div class="navbar-area navbar-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/haecksen/logo.png" alt="Logo" class="haecksen-logo">
+                            </a>
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarTwo">
+                                <ul class="navbar-nav m-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="index.html">Start</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== EVENT SCHEDULE PART START ======-->
+<section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Stitch 'n Bitch - Sticken für Anfänger*innen</h1>
+        <h2>29.12.2023 15:00</h2>
+        <p class="lead text-muted">
+         Sticken für Anfänger*innen. (Achtung: Sticken, nicht StRicken! 😅)
+Ich zeige euch ein paar einfache Stiche und Techniken, mit denen ihr quasi auf Stoff "malen" könnt. Die Techniken könnt ihr zum Beispiel nutzen, 
+um Projekte zu verzieren oder auch für Visible Mending. Ihr könnt gerne live mitarbeiten, das würde mich sehr freuen. Materialliste in der Beschreibung.
+        </p>
+        <p>
+          <a href="https://www.haecksen.org/wer-sind-die-haecksen/" target="_blank" class="btn btn-primary my-2">Zum Workshop</a>
+        </p>
+      </div>
+    </div>
+
+<!-- row -->
+<div class="row">
+
+<div class="col-md-6">
+			  <a class="prtx" href="https://pretalx.freifunktag.de/its-too-peoply-2022/talk/WYMVAA/">
+				<div class="h-100 p-5 text-white rounded-3">
+					<p>
+Ich habe oft den Eindruck, dass für viele diese Handwerkstechnik eine große gedankliche Hürde beinhaltet, dabei ist Sticken viel einfacher, 
+als viele denken. Natürlich gibt es tolle, komplizierte Stiche, aber auch einige ganz Simple, mit denen sich schon viel erreichen lässt. Die 
+Techniken könnt ihr zum Beispiel nutzen, um Projekte (Kleidung, Gegenstände, Schmuck..) zu verzieren oder auch für Visible Mending. (Visible 
+Mending ist kein Schwerpunkt, aber ich kratze es am Rande an.)
+Ich fände es ziemlich cool, wenn Einige von euch im Workshop direkt mit mir zusammen die Stiche ausprobieren und lernen wollen. Da habe ich 
+richtig Lust drauf.
+				   </p>
+				</div>
+			  </a>
+			</div>
+
+			<div class="col-md-6">
+			  <a class="prtx" href="https://pretalx.freifunktag.de/its-too-peoply-2022/talk/ER7JDY/">
+				<div class="h-100 p-5 text-white rounded-3">
+					<p>Ihr benötigt dafür:<br>
+<ul>
+<li>Stickrahmen</li>
+<li>Sticknadeln (diese haben eine größere, schmale Öse und sind meist spitzer)</li>
+<li>Stickgarn (teilbares Stickgarn)</li>
+<li>Schere</li>
+<li>weicher Bleistift</li>
+<li>gewebter Baumwoll- oder Leinenstoff - nicht elastisch! (Ihr könnt hier gerne Stoff upcyceln. 
+Es sollte ein festes Gewebe sein, allerdings nicht so fest, dass die Nadel samt Garn nicht durchgezogen werden kann. 
+Aber auch kein zu locker gewebter Stoff. Prüft es einfach vorher.)</li>
+<li>Backpapier (optional)</li>
+<li>Stickvorlage (optional, gerne nach Absprache mit mir)</li>
+<li>Falls ihr vorab Fragen habt oder euch unsicher wegen dem Material seid, könnt ihr mich unter info@fiberspace.de erreichen.</li>
+<li>Mein Crafting-Blog ist <a href="https://www.fiberspace.de" target="_blank">www.fiberspace.de</a></li>
+</ul>
+				   </p>
+				</div>
+			  </a>
+			</div>
+		 </div>
+<!-- end row -->
+  </section><div class="album py-2 bg-light rooms">
+      <div class="container">
+
+        <div class="row row-cols-1 py-4">
+          <div class="col">
+            <div class="section-title text-center pb-20">
+                <h2 class="title">Über den Workshop</h2>
+                <p class="text">Hier findest du Links und Infos zur Speakerin und den Link zum Raum</p>
+            </div> <!-- section title -->
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+         <div class="col">
+            <div class="card shadow-sm">
+              <img src="https://pretalx.c3voc.de/media/avatars/Magischer-Kessel_bunt_256_RzLsPJN.jpg" alt="Magic Cauldron">
+
+              <div class="card-body">
+                <p class="card-text">Magic Cauldron</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://meeten.statt-drosseln.de/b/cri-5br-nrx-mv8" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">zum Workshop Raum</button>
+                    </a>
+<a href="www.magischer-Kessel.de" target="_blank"><button type="button" class"btn">Foodblog</button></a>
+<a href="www.fiberspace.de" target="_blank"><button type="button" class"btn">Craftingblog</button></a>
+<a href="@Magic_Cauldron@treehouse.technopagans.de" target="_blank"><button type="button" class"btn">Mastodon</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<div class="col">
+            <div class="card shadow-sm">
+              <img src="assets/images/haecksen/512px-Margaret_Hamilton.jpg" alt="Margaret Hamilton">
+
+              <div class="card-body">
+                <p class="card-text">Magic Margaret</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="https://meeten.statt-drosseln.de/b/cri-5br-nrx-mv8" target="_blank">
+                      <button type="button" class="btn btn-sm btn-outline-primary">zum Workshop Raum</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+       
+
+        </div>
+
+        <div class="row justify-content-center py-5">
+                   <div class="col-lg-8">
+                       <div class="section-title text-center pb-20">
+                           <p class="text-muted">
+           <a href="https://commons.wikimedia.org/wiki/User:Chicasentecnologia">Chicas En Tecnología</a>,
+           <a href="https://commons.wikimedia.org/wiki/File:Margaret_Hamilton_en_Grandes_Mujeres_de_Chicas_en_Tecnología.jpg">Margaret Hamilton en Grandes Mujeres de Chicas en Tecnología</a>,
+<a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" rel="license">CC BY-SA 4.0</a>
+             </p>
+                       </div> <!-- section title -->
+                   </div>
+               </div> <!-- row -->
+
+      </div>
+    </div>
+        <!--====== EVENT SCHEDULE PART ENDS ======-->
+
+
+    <!--====== FOOTER PART START ======-->
+
+    <section id="footer" class="footer-area bg_cover" style="background-image: url(../assets/images/haecksen/Lagerfeuer-hg.png)">
+
+        <div class="footer-widget">
+            <div class="container">
+                <div class="widget  pt-80 pb-130">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="footer-address mt-40">
+                                <h5 class="f-title">Wo und wann?</h5>
+                                <p class="text">27. - 31. DEZEMBER, 2020 <br>in deinem Internet</p>
+                            </div> <!-- footer address -->
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="footer-contact mt-40">
+                                <h5 class="f-title">Social Media</h5>
+                                <p class="text">Immer up to date! Keinen haecksen Content mehr verpassen:</p>
+                                <ul class="social">
+                                    <li><a href="https://twitter.com/HaecksenC" target="_blank"><i class="lni-twitter-original"></i></a></li>
+                                    <li><a href="https://chaos.social/web/accounts/125218" target="_blank"><img src="assets/images/haecksen/mastodon.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- widget -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p class="text">Template Designed and Developed by <a href="https://graygrids.com/" rel="nofollow">GrayGrids</a>. All Rights Reserved by Us</p>
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!-- row -->
+
+
+
+
+
+
+
+
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+
+    <!--====== Countdown js ======-->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
