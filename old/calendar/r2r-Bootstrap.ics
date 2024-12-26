@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+X-WR-CALNAME:r2r
+NAME:r2r
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210401T105239Z
+UID:20210401T105239Z-1599258442@marudot.com
+DTSTART;TZID=Europe/Berlin:20210403T140000
+DTEND;TZID=Europe/Berlin:20210403T150000
+SUMMARY:Einführung in Bootstrap
+URL:https://events.haecksen.org/awesome_ada.html
+DESCRIPTION:Ihr bekommt eine kleine Einführung in das Layout Framework Bootstrap Wir gehen zusammen den Aufbau durch und was ihr alles braucht\, um damit statische Seiten schnell und einfach zu gestalten. Bootstrap hat eine Menge Vorteil\, um das Rad nicht neu erfinden und trotzdem eine schöne GUI zu erhalten. Am Ende des Workshops steht dann eine kleine Beispielseite. 
+LOCATION:Awesome Ada
+END:VEVENT
+END:VCALENDAR

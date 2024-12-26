@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ical.marudot.com//iCal Event Maker
+X-WR-CALNAME:Hackathon
+NAME:Hackathon
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+TZURL:http://tzurl.org/zoneinfo-outlook/Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20210330T210223Z
+UID:20210330T210223Z-60663169@marudot.com
+DTSTART;TZID=Europe/Berlin:20210402T160000
+DTEND;TZID=Europe/Berlin:20210402T170000
+SUMMARY:Falsche Hackathon Versprechen
+URL:https://pretalx.c3voc.de/divoc-reboot-to-respawn-2021/talk/MF8A7V/
+DESCRIPTION:Nach dem "WirVsVirus"-Hackathon der Bundesregierung verbreitet sich die Idee\, dass Hackathons unsere Welt retten können\, immer weiter. Ganz so einfach ist das nicht. Ein Vortrag über Sinn und Zweck von Hackathons\, gesellschaftliche Veränderung\, Digital-Hypes und diskriminierende Strukturen – und wie wir es besser machen könnten. 
+END:VEVENT
+END:VCALENDAR
