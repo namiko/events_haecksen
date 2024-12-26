@@ -86,7 +86,7 @@ background: rgb(0,163,87); background: linear-gradient(90deg, rgba(0,163,87,0.88
 }
 
 .mt-post-txt {
-	min-height: 195px;
+	height: 200px;
 	margin-bottom: 0;
 	overflow: hidden;
 }
