@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta name="author" content="web haecksen">
+    <meta name="keywords" content="haecksen">
+    <meta name="description" content="haecksen events">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -209,7 +213,6 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link me-4 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Aktuell</a>
                   <ul class="dropdown-menu animate slide border">
-                    <li><a href="2024/38c3.html" class="dropdown-item">38C3</a></li>
                     <!-- <li><a href="202eh22.html" class="dropdown-item">EH22</a></li> -->
                     <li><a class="dropdown-item" href="cfc25/index.html">CFC25</a></li>
                   </ul>
@@ -305,9 +308,10 @@
     </header>
 
     <!-- Countdown -->
+    <!-- uncomment if required
     <section id="limited-offer" class="padding-large"
-      style="background: rgb(15,0,10);
-background: linear-gradient(90deg, rgba(15,0,10,1) 0%, rgba(41,17,76,1) 75%, rgba(15,0,10,1) 98%);">
+      style="background: rgb(56,28,71);
+background: linear-gradient(180deg, rgba(56,28,71,1) 0%, rgba(116,36,127,1) 15%, rgba(162,73,89,1) 30%, rgba(241,141,24,1) 45%, rgba(250,223,27,1) 100%);">
       <div class="container">
         <div class="row d-flex align-items-center">
           <div class="col-md-6 text-center">
@@ -317,8 +321,8 @@ background: linear-gradient(90deg, rgba(15,0,10,1) 0%, rgba(41,17,76,1) 75%, rgb
           </div>
          
           <div class="col-md-5 offset-md-1 mt-5 mt-md-0 text-center text-md-start">
-            <h2 style="color: #FF5053;">Haecksen Assembly<br>38C3</h2>
-            <!--
+            <h2 style="color: #FF5053;">Chaos<br> Feminist<br> Convention</h2>
+           
             <div id="countdown-clock" class="d-flex align-items-center my-3" style="color: #B2AAFF;">
               <div class="time d-grid pe-3">
                 <span class="days fs-1 fw-normal"></span>
@@ -340,13 +344,14 @@ background: linear-gradient(90deg, rgba(15,0,10,1) 0%, rgba(41,17,76,1) 75%, rgb
                 <small>Sek.</small>
               </div>
             </div>
-            -->
-            <a href="2024/38c3.html" class="btn mt-3" style="background-color: #6A5FDB;">Zum Event</a>
+            
+            <a href="2024/38c3.html" class="btn mt-3" style="background-color: #6A5FDB;">Ankündigung</a>
           </div> 
         </div>
       </div>
       </div>
     </section>
+    -->
     <!-- End countdown -->
 
     <!-- Slider -->
