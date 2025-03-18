@@ -23,22 +23,40 @@
      .cfc25 h3 {      
       color: #381c47;
      }
-     #about h2 {
-      font-size: 2.1rem;
-      color: #66c7f2;
-     }
      #about h3 {
       font-size: 1.5rem;
       color: #f18918;
      }
-     #about p {
+     
+     #cfp h2 {
+      color: #66c7f2;
+     }
+
+     #cfp p {
       color: #fff;
+     }
+     #cfp a {
+      text-decoration: underline;
+      color: #66c7f2;
      }
      .cfc25 #limited-offer h2 {
       color: #fff;
      }
      .cfc25 #limited-offer h3 {
       color: #66c7f2;
+     }
+     .cfp-box {
+      background:#150a1a url(cfc25_ute_bg.png) bottom center no-repeat; 
+      background-size:cover;
+     }
+     @media screen and (max-width: 820px) { 
+      .cfp-box {
+        background-size: contain;
+        background-color: #010101;
+      }
+     }
+
+     @media screen and (max-width: 390px) { 
      }
    </style>
   </head>
@@ -336,10 +354,10 @@
 background: linear-gradient(180deg, rgba(56,28,71,1) 0%, rgba(116,36,127,1) 15%, rgba(162,73,89,1) 30%, rgba(241,141,24,1) 45%, rgba(250,223,27,1) 100%);">
     
     <!--====== CFP PART START ======-->
-    <section id="cfp" class="padding-large">
-      <div class="container">
+    <section id="cfp" class="padding-large cfp-box">
+      <div class="container" >
         <div class="row d-flex align-items-center">
-          <div class="col-md-6 offset-md-3">
+          <div class="col-lg-6" style="color: #fff;">
             <div class="section-title">
               <h2>Traut Euch!</h2>
             </div> <!-- section title -->
@@ -366,7 +384,7 @@ background: linear-gradient(180deg, rgba(56,28,71,1) 0%, rgba(116,36,127,1) 15%,
                 <li>Digitale und analoge Austellungsstücke, Kunstprojekte und Performances</li>
               </ul>
             </p>
-            <p class="text mt-30"><b>Wir freuen uns auf Euch!</b></p>
+            <p class="text mt-30" style="padding-bottom: 6rem;"><b>Wir freuen uns auf Euch!</b></p>
           </div>
         </div>
       </div>
@@ -377,16 +395,12 @@ background: linear-gradient(180deg, rgba(56,28,71,1) 0%, rgba(116,36,127,1) 15%,
     <section id="about" class="padding-large">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-md-6">
-            <div class="image-holder">
-              <img src="../images/haecksen/Lagerfeuer-hg.png" class="img-fluid" alt="haecksen logo 38c3">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="section-title">
+          <div class="col-md-8 offset-md-2">
+            <div class="section-title text-center">
               <h2> Chaos Feminist Convention</h2>
             </div> <!-- section title -->
-
+          </div>
+          <div class="col-md-8 offset-md-2">
             <p class="text mt-30">Unter dem Motto Utopia Test Environment planen die Haecksen eine dreitägige Versammlung vom 4. bis 6. Juli 2025 im <a href="https://kulturhaus-eidelstedt.de/" target="_blank">Kulturhaus Eidelstedt</a> in Hamburg - die Chaos Feminist Convention. All Creatures welcome!</p>
 
             <p class="text mt-30">Save the date and stay tuned! Bald gibt es hier weitere Infos. </p>
@@ -402,7 +416,7 @@ background: linear-gradient(180deg, rgba(56,28,71,1) 0%, rgba(116,36,127,1) 15%,
     <section id="about-lv" class="padding-bottom-large">
       <div class="container">
         <div class="row">
-          <div class="text-center mb-4 pb-3">
+          <div class="col-md-8 offset-md-2 text-center mb-4 pb-3">
             <h2>Über das Event</h2>
             <p class="text-justify mb-30">Die Haecksen planen eine dreitägige Versammlung vom 4. bis 6. Juli 2025, die 1. Chaos Feminist Convention - von Haecksen für Haecksen und alle Wesen, die mit uns eine inklusive, gerechte und kreative Gesellschaft entwerfen wollen.</p>
           </div>
